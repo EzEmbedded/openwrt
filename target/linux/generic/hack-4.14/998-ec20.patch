@@ -58,9 +58,9 @@
 --- a/drivers/net/usb/qmi_wwan.c  2021-02-02 15:59:31.663720254 +0800
 +++ b/drivers/net/usb/qmi_wwan.c      2021-02-02 15:59:31.659720258 +0800
 @@ -22,6 +22,66 @@
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/cdc-wdm.h>
+ #include <linux/usb/cdc.h>
+ #include <linux/usb/usbnet.h>
+ #include <linux/usb/cdc-wdm.h>
 +#if 1 //Added by Quectel
 +#include <linux/etherdevice.h>
 +struct sk_buff *qmi_wwan_tx_fixup(struct usbnet *dev, struct sk_buff *skb, gfp_t flags)
