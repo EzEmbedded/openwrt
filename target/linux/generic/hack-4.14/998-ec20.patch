@@ -44,8 +44,7 @@
 +
         /* Store the device flags so we can use them during attach. */
         usb_set_serial_data(serial, (void *)device_flags);
- 
-		
+ 		
 --- a/drivers/usb/serial/qcserial.c  2021-02-02 15:59:31.663720254 +0800
 +++ b/drivers/usb/serial/qcserial.c      2021-02-02 15:59:31.659720258 +0800
 @@ -92,7 +92,6 @@
@@ -55,8 +54,7 @@
 -       {USB_DEVICE(0x05c6, 0x9215)},   /* Acer Gobi 2000 Modem device (VP413) */
         {USB_DEVICE(0x05c6, 0x9264)},   /* Asus Gobi 2000 QDL device (VR305) */
         {USB_DEVICE(0x05c6, 0x9265)},   /* Asus Gobi 2000 Modem device (VR305) */
-        {USB_DEVICE(0x05c6, 0x9234)},   /* Top Global Gobi 2000 QDL device (VR306) */
-		
+        {USB_DEVICE(0x05c6, 0x9234)},   /* Top Global Gobi 2000 QDL device (VR306) */		
 --- a/drivers/net/usb/qmi_wwan.c  2021-02-02 15:59:31.663720254 +0800
 +++ b/drivers/net/usb/qmi_wwan.c      2021-02-02 15:59:31.659720258 +0800
 @@ -22,6 +22,66 @@
@@ -200,7 +198,6 @@
         /* 1. CDC ECM like devices match on the control interface */
         {       /* Huawei E392, E398 and possibly others sharing both device id and more... */
                 USB_VENDOR_AND_INTERFACE_INFO(HUAWEI_VENDOR_ID, USB_CLASS_VENDOR_SPEC, 1, 9),
-
 --- a/drivers/usb/serial/usb_wwan.c  2021-02-02 15:59:31.663720254 +0800
 +++ b/drivers/usb/serial/usb_wwan.c     2021-02-02 15:59:31.659720258 +0800
 @@ -507,8 +507,19 @@
