@@ -72,8 +72,8 @@
 +
 +#if 1 //Added by Quectel
 +if (dev->udev->descriptor.idVendor == cpu_to_le16(0x2C7C)) {
-+  dev_info(&intf->dev, "Quectel
-+           EC25 & EC21 & EG91 & EG95 & EG06 & EP06 & EM06 & BG96 & AG35 work on RawIP mode\n");
++  //dev_info(&intf->dev, "Quectel
++          // EC25 & EC21 & EG91 & EG95 & EG06 & EP06 & EM06 & BG96 & AG35 work on RawIP mode\n");
 +           dev->net->flags |= IFF_NOARP;
 +#if (LINUX_VERSION_CODE < KERNEL_VERSION( 3,9,1 ))
 +           /* make MAC addr easily distinguishable from an IP header */
